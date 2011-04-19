@@ -1,0 +1,6 @@
+Uploadcourse.php for Moodle 2
+Allows bulk creation of courses by upload of a CSV flat file.
+
+Place in /admin and visit /admin/uploadcourse.php to use - you need to be an administrator.
+Currently quite messy, improvements welcome.
+All credit to original creators, see credits at the top of the file.
