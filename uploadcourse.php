@@ -236,13 +236,13 @@
     
     function default_category() {
         global $DB;
-        $categories = $DB->get_records('course_categories', array(), 'id ASC', '*', 1, 1);
+        $categories = $DB->get_records('course_categories', array(), 'id ASC', '*', 0, 1);
         if ($categories) {
             foreach($categories as $category) {
                 return $category->id;
             }
         } else {
-            return 1;
+            csverror('No Default category could be determined!');
         }
     }
     
